@@ -13,8 +13,8 @@ npm install --save-dev https://github.com/mytonwallet-org/eslint-config-mytonwal
 
 Then create an `.eslintrc` with the following content:
 
-```json5
+```json
 {
-  extends: ['mytonwallet/config-frontend'],
+  "extends": ["mytonwallet/config-frontend"],
 }
 ```
