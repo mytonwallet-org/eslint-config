@@ -89,7 +89,8 @@ module.exports = {
         "prefer": "type-imports",
         "disallowTypeAnnotations": false
       }
-    ]
+    ],
+    "@typescript-eslint/no-floating-promises": "error"
   },
   "parserOptions": {
     "project": "./tsconfig.json"
