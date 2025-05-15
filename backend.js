@@ -1,6 +1,6 @@
 module.exports = {
   "extends": [
-    "mytonwallet/config-common"
+    "@mytonwallet/eslint-config/common"
   ],
   "rules": {
     "@typescript-eslint/lines-between-class-members": "off",

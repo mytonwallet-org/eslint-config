@@ -2,7 +2,7 @@ module.exports = {
   "extends": [
     "react-app",
     "plugin:teactn/recommended",
-    "mytonwallet/config-common"
+    "@mytonwallet/eslint-config/common"
   ],
   "plugins": [
     "jsx-expressions",
