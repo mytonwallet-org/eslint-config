@@ -18,15 +18,15 @@ npm install --save-dev @mytonwallet/eslint-config@https://github.com/mytonwallet
 
 ```js
 // eslint.config.js
-import { configs } from '@mytonwallet/eslint-config/frontend';
+import mtwConfig from '@mytonwallet/eslint-config';
 
-export default [
-  ...configs.frontendRecommended,
+export default eslint.config(
+  mtwConfig.configs.frontendRecommended,
   {
     // Your custom overrides
     rules: {
       'no-console': 'warn',
     },
   },
-];
+);
 ```
