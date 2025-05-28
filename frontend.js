@@ -12,7 +12,7 @@ import simpleImportSortPlugin from 'eslint-plugin-simple-import-sort';
 import unusedImports from 'eslint-plugin-unused-imports';
 import tseslint from 'typescript-eslint';
 
-export default tseslint.config(
+const recommended = tseslint.config(
   eslint.configs.recommended,
   tseslint.configs.recommendedTypeChecked,
   tseslint.configs.stylistic,
@@ -48,7 +48,7 @@ export default tseslint.config(
     'dist-electron',
   ]),
   {
-    name: 'teact-config',
+    name: 'mtw-eslint-config/recommended',
     files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
     settings: {
       react: {
@@ -228,3 +228,5 @@ export default tseslint.config(
     },
   },
 );
+
+export default recommended;
