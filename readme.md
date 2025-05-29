@@ -4,8 +4,7 @@ A comprehensive ESLint configuration for Teact/TypeScript projects used by MyTon
 
 ## Available Configurations
 
-### Frontend Configuration
-
+- **`backendRecommended`** - Plain TypeScript configuration for backend projects
 - **`frontendRecommended`** - Full-featured configuration with Teact, TypeScript, and all plugins
 
 ## Installation
@@ -23,6 +22,7 @@ import mtwConfig from '@mytonwallet/eslint-config';
 export default eslint.config(
   mtwConfig.configs.frontendRecommended,
   globalIgnores([
+    // Your ignored files
     'dist',
   ]),
   {

@@ -4,7 +4,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "inspect:frontend": "eslint -c frontend.js --inspect-config"
+    "inspect:frontend": "eslint -c frontend.js --inspect-config",
+    "inspect:backend": "eslint -c backend.js --inspect-config"
   },
   "peerDependencies": {
     "eslint": "^9.0.0"

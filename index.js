@@ -1,7 +1,9 @@
-import frontendConfig from './frontend.js';
+import backendRecommended from './backend.js';
+import frontendRecommended from './frontend.js';
 
 export const configs = {
-  frontendRecommended: frontendConfig,
+  backendRecommended,
+  frontendRecommended,
 };
 
 const moduleExports = {
