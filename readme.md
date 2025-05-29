@@ -22,6 +22,9 @@ import mtwConfig from '@mytonwallet/eslint-config';
 
 export default eslint.config(
   mtwConfig.configs.frontendRecommended,
+  globalIgnores([
+    'dist',
+  ]),
   {
     // Your custom overrides
     rules: {

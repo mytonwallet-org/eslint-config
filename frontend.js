@@ -1,6 +1,5 @@
 import eslint from '@eslint/js';
 import stylisticJs from '@stylistic/eslint-plugin';
-import { globalIgnores } from 'eslint/config';
 import importsPlugin from 'eslint-plugin-import';
 import jestPlugin from 'eslint-plugin-jest';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
@@ -25,28 +24,6 @@ const recommended = tseslint.config(
     braceStyle: '1tbs',
     quoteProps: 'as-needed',
   }),
-  globalIgnores([
-    'dev',
-    'public',
-    'mobile',
-    'src/lib/big.js/',
-    'src/lib/rlottie/rlottie-wasm.js',
-    'src/lib/aes-js/index.js',
-    'src/lib/noble-ed25519/index.js',
-    'src/lib/dexie/',
-    'src/lib/axios-retry/',
-    'src/lib/is-retry-allowed/',
-    '.github/',
-    'babel.config.js',
-    'jest.config.js',
-    'playwright.config.ts',
-    'postcss.config.js',
-    'coverage',
-    'trash',
-    'deploy',
-    'dist',
-    'dist-electron',
-  ]),
   {
     name: 'mtw-eslint-config/recommended',
     files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
