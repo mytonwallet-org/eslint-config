@@ -1,20 +1,35 @@
-# MyTonWallet ESLint configurations
+# MyTonWallet ESLint Configuration
 
-Available configurations:
+A comprehensive ESLint configuration for Teact/TypeScript projects used by MyTonWallet.
 
-- `@mytonwallet/eslint-config/frontend`
-- `@mytonwallet/esling-config/backend`
+## Available Configurations
 
-To use a configuration in your project, first install the package:
+- **`backendRecommended`** - Plain TypeScript configuration for backend projects
+- **`frontendRecommended`** - Full-featured configuration with Teact, TypeScript, and all plugins
+
+## Installation
 
 ```bash
-npm install --save-dev https://github.com/mytonwallet-org/eslint-config
+npm install --save-dev @mytonwallet/eslint-config@https://github.com/mytonwallet-org/eslint-config
 ```
 
-Then create an `.eslintrc` with the following content:
+## Usage
 
-```json
-{
-  "extends": ["@mytonwallet/esling-config/frontend"]
-}
+```js
+// eslint.config.js
+import mtwConfig from '@mytonwallet/eslint-config';
+
+export default eslint.config(
+  mtwConfig.configs.frontendRecommended,
+  globalIgnores([
+    // Your ignored files
+    'dist',
+  ]),
+  {
+    // Your custom overrides
+    rules: {
+      'no-console': 'warn',
+    },
+  },
+);
 ```
